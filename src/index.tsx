@@ -4,7 +4,7 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/navbar"
-import Main from "./pages/Main"
+import Main from "./pages/main"
 import { Provider } from "react-redux"
 import store from "./store"
 
