@@ -1,12 +1,13 @@
 export interface ProductInfo {
-  name: string,
-  image: string,
-  description: string,
+  id: number
+  name: string
+  image: string
+  description: string
   price: number
 }
 
 export interface Cart {
-  cartItems: Array<ProductInfo>
+  cartItems: Array<ProductInfo & { quantity: number }>
   cartTotalAmount: number
   cartTotalQuantity: number
 }
