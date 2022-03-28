@@ -8,17 +8,19 @@ import Main from "./pages/Main"
 import { Provider } from "react-redux"
 import store from "./store"
 import Cart from "./pages/Cart"
+import ProductPreview from "./pages/ProductPreview"
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <div className="min-h-screen bg-neutral-100 dark:bg-neutral-800">
+        <div className="min-h-screen min-w-[326px] bg-neutral-100 dark:bg-neutral-800">
           <Navbar/>
-          <div className="p-5">
+          <div className="p-5 max-w-screen-2xl mx-auto">
             <Routes>
               <Route path="/" element={<Main/>}/>
               <Route path="cart" element={<Cart/>}/>
+              <Route path="product" element={<ProductPreview/>}/>
             </Routes>
           </div>
         </div>
