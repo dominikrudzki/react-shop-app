@@ -13,5 +13,6 @@ export interface Cart {
 }
 
 export interface RootState {
+  products: Array<ProductInfo>
   cart: Cart
 }
