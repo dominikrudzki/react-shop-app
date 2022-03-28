@@ -4,7 +4,7 @@
 
 ### Technologies:
 - React
-- React MatRoutererial
+- React Router
 - Redux
 
 ### Screens:
