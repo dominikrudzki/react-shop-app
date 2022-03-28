@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Main from "./pages/Main"
 import { Provider } from "react-redux"
@@ -13,7 +13,7 @@ import ProductPreview from "./pages/ProductPreview"
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen min-w-[326px] bg-neutral-100 dark:bg-neutral-800">
           <Navbar/>
           <div className="p-5 max-w-screen-2xl mx-auto">
@@ -24,7 +24,7 @@ ReactDOM.render(
             </Routes>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
