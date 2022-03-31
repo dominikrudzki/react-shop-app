@@ -1,3 +1,17 @@
+# React-Shop-App
+
+### Shop app with redux cart
+
+### Technologies:
+- React
+- React Router
+- Redux
+
+### Screens:
+![image](https://user-images.githubusercontent.com/60202692/160486929-ca5592b5-df55-4a80-852f-ee4201ae403a.png)
+![image](https://user-images.githubusercontent.com/60202692/160487036-3eec2abf-3510-402d-a4d1-947658c773b0.png)
+![image](https://user-images.githubusercontent.com/60202692/160487144-3d6d8311-66df-4c77-9371-22d366586166.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
