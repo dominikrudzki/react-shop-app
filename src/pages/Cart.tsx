@@ -1,6 +1,6 @@
 import CartProduct from "../components/CartProduct"
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "../types"
+import { ProductInfo, RootState } from "../types"
 import { resetCartItems } from "../store/CartSlice"
 
 const Cart = () => {
@@ -11,9 +11,9 @@ const Cart = () => {
     <div className="flex flex-col gap-8 lg:flex-row justify-center">
       <div className="basis-3/5">
         {cart.cartItems.length === 0 &&
-          <span className="block font-semibold mx-auto text-center dark:text-neutral-100">You cart is empty!</span>}
+          <span className="block font-semibold mx-auto text-center dark:text-neutral-100">Your cart is empty!</span>}
         <ul>
-          {cart.cartItems.map((item, index) =>
+          {cart.cartItems.map((item: ProductInfo & { quantity: number }, index: number) =>
             <li key={index}>
               <CartProduct {...item}/>
             </li>
